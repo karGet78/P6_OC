@@ -12,3 +12,60 @@
 #site-logo {
     margin-left: 37px;
 }
+/* style pour le formulaire de contact */
+
+.meet-us label {
+  font-family: 'Syne';
+  font-weight: 400;
+  font-size: 20px !important;
+  text-align: left;
+}
+
+.meet-us input[type="email"],
+.meet-us input[type="text"] {
+    width: 100%;
+    max-width:383px !important;
+    height: 71px !important;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Syne';
+    font-size: 20px;
+    border-radius: 7px;
+    margin-bottom: -10px !important;
+}
+
+ 
+.meet-us textarea {
+  width: 383px;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Syne';
+  font-size: 20px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  margin: 0;
+  height: 237px !important;
+}
+
+
+.submit-button {
+  width: 198px;
+  height: 55px;
+  font-family: 'Syne', sans-serif;
+  font-weight: 400;
+  font-size: 15px !important;
+  color: #FFFFFF;
+  background-color: #E0B9B4 !important;
+  border-radius: 5px !important;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 auto !important;
+  text-transform: none !important;
+}
+  
+.submit-button:hover {
+  background-color: #C02E44 !important;
+}
