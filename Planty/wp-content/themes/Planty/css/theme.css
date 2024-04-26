@@ -12,17 +12,22 @@
 #site-logo {
     margin-left: 37px;
 }
-/* style pour le formulaire de contact */
 
-.meet-us label {
+
+/*--Style commun pour le formulaire de contact et de commande--*/
+
+.your-info label, .delivery label, .meet-us label {
   font-family: 'Syne';
   font-weight: 400;
   font-size: 20px !important;
   text-align: left;
 }
 
-.meet-us input[type="email"],
-.meet-us input[type="text"] {
+.your-info input[type="text"],
+.your-info input[type="email"],
+.delivery input[type="text"],
+.meet-us input[type="text"],
+.meet-us input[type="email"] {
     width: 100%;
     max-width:383px !important;
     height: 71px !important;
@@ -33,21 +38,6 @@
     border-radius: 7px;
     margin-bottom: -10px !important;
 }
-
- 
-.meet-us textarea {
-  width: 383px;
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: 'Syne';
-  font-size: 20px;
-  border: 1px solid #000000;
-  border-radius: 7px;
-  margin: 0;
-  height: 237px !important;
-}
-
-
 .submit-button {
   width: 198px;
   height: 55px;
@@ -69,3 +59,126 @@
 .submit-button:hover {
   background-color: #C02E44 !important;
 }
+
+/* Style pour le formulaire de contact */
+.meet-us textarea {
+  width: 383px;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Syne';
+  font-size: 20px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  margin: 0;
+  height: 237px !important;
+}
+
+/* Style pour le formulaire de commande */
+.command-form {
+    max-width: 900px;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+  .command-form h1{
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 38px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 40px 0 40px 0;
+}
+  
+.command-form h2 {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+    color: #FFFFFF;
+}
+
+
+.fruits-drink input[type="text"] {
+  width: 39px;
+  height: 56px;
+  font-family: 'inter';
+  text-align: center;
+  line-height: 19.36px;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.separator {
+  width: 100%;
+  border: 1px solid #FFFFFF;
+  margin-bottom: 30px;
+}
+  
+.information {
+  display: flex;
+  justify-content: space-between;
+    
+}
+  
+.your-info, .delivery {
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;*/
+  }
+  
+  .your-info label, .delivery label {
+    color: #FFFFFF !important;
+    
+    }
+  
+.separator_vertical {
+  width: 1px;
+  height: 480px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+  
+
+  
+@media only screen and (max-width: 768px) {
+.command, .information{
+  flex-direction: column;
+}
+
+.command-form h1 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+.your-info,
+.delivery {
+  width: 100%;
+  margin-bottom: 20px;
+}
+  
+.your-info input[type="text"],
+.your-info input[type="email"],
+.delivery input[type="text"] {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0px !important;
+}
+  
+.separator_vertical {
+  display: none;
+}
+  
+.submit-button {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.your-info, .delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+      
+}
+  
+

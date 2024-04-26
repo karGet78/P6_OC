@@ -9,5 +9,3 @@ function theme_enqueue_styles(){
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 
 }
-
-
