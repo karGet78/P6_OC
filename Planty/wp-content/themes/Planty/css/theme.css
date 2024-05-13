@@ -36,9 +36,10 @@
     font-family: 'Syne';
     font-size: 20px;
     border-radius: 7px;
-    margin-bottom: -10px !important;
+    margin-bottom: -40px !important;
 }
-.submit-button {
+.submit-button,
+.submit-button_c {
   width: 198px;
   height: 55px;
   font-family: 'Syne', sans-serif;
@@ -55,8 +56,15 @@
   margin: 0 auto !important;
   text-transform: none !important;
 }
+.submit-button{
+  margin-top: -40px !important;
+}
+.submit-button_c{
+  margin-top: 20px !important;
+}
   
-.submit-button:hover {
+.submit-button:hover,
+.submit-button_c:hover {
   background-color: #C02E44 !important;
 }
 
@@ -75,7 +83,7 @@
 
 /* Style pour le formulaire de commande */
 .command-form {
-    max-width: 900px;
+    max-width: 860px;
     margin: 0 auto;
     /*position: relative;*/
 }
@@ -134,7 +142,7 @@
   
 .separator_vertical {
   width: 1px;
-  height: 480px;
+  height: 425px;
   background-color: #FFFFFF;
   margin-top: 20px;
 }
@@ -147,7 +155,7 @@
 }
 
 .command-form h1 {
-  font-size: 28px;
+  font-size: 24px;
   margin: 20px 0;
 }
 .your-info,

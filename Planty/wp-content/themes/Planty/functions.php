@@ -10,6 +10,7 @@ function theme_enqueue_styles(){
 
 }
 
+// Insertion lien Admin dans le menu de navigation
 function add_admin_link_to_nav_menu($menu_nav) {
     // Vérifier si l'utilisateur est connecté
     if (is_user_logged_in()) {
